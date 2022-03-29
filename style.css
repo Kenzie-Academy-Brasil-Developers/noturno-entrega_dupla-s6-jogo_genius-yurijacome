@@ -5,7 +5,7 @@
 }
 
 body{
-background-color: rgb(61, 61, 61);
+background-color: rgb(110, 110, 110);
 text-align: center;
 }
 
@@ -14,12 +14,18 @@ body h1{
 }
 
 
-#colorbuttons{
- display: flex;
- flex-wrap: wrap;
+#game{
  width: 600px;
  margin: auto;
  margin-top: 50px;
+ border: 20px solid rgb(0, 0, 0);
+ border-radius: 100%;
+ box-shadow: -1px 1px 40px 5px rgba(0,0,0,0.9);
+}
+
+#colorButtons{
+ display: flex;
+ flex-wrap: wrap;
 }
 
 #green{
@@ -28,12 +34,12 @@ body h1{
  height: 300px;
  border-bottom-right-radius: 100%;
  border: none;
+ border-top: 15px solid black;
+ border-left: 15px solid black;
  cursor: pointer;
+ box-shadow: 0px 0px 120px 30px rgba(0,0,0,0.8) inset;
 
-}
 
-#green:hover{
-    box-shadow: -3px 3px 46px 0px rgba(0,0,0,0.51) inset;
 }
 
 #blue{
@@ -42,13 +48,11 @@ body h1{
  height: 300px;
  border-top-right-radius: 100%;
  border: none;
+ border-left: 15px solid black;
  cursor: pointer;
+ box-shadow: 0px 0px 120px 30px rgba(0,0,0,0.8) inset;
 
-}
 
-#blue:hover{
-    opacity:1;
-    box-shadow: -3px 3px 46px 0px rgba(0,0,0,0.51) inset;
 }
 
 #yellow{
@@ -57,14 +61,12 @@ body h1{
  height: 300px;
  border-bottom-left-radius: 100%;
  border: none;
+ border-top: 15px solid black;
  cursor: pointer;
+ box-shadow: 0px 0px 120px 30px rgba(0,0,0,0.8) inset;
 
 
-}
 
-#yellow:hover{
-    opacity:1;
-    box-shadow: -3px 3px 46px 0px rgba(0,0,0,0.51) inset;
 }
 
 #red{
@@ -74,39 +76,51 @@ body h1{
  border-top-left-radius: 100%;
  border: none;
  cursor: pointer;
+ box-shadow: 0px 0px 120px 30px rgba(0,0,0,0.8) inset;
 
 }
 
 #red:hover{
-    opacity:1;
-    box-shadow: -3px 3px 46px 0px rgba(0,0,0,0.51) inset;
+ box-shadow: -3px 3px 46px 0px rgba(0,0,0,0.91) inset;
 }
+#blue:hover{
+ box-shadow: -3px 3px 46px 0px rgba(0,0,0,0.91) inset;
+ }
+#yellow:hover{
+ box-shadow: -3px 3px 46px 0px rgba(0,0,0,0.91) inset;
+ }
+#green:hover{
+ box-shadow: -3px 3px 46px 0px rgba(0,0,0,0.91) inset;
+ }
+
 
 #centerArea{
  position: absolute;
- margin-left: 700px;
- margin-top: 250px;
+ border: 15px solid black;
+ border-radius: 100%;
+ margin: 190px;
+ box-shadow: -3px 3px 46px 0px rgba(0,0,0,0.91);
+
 }
 
 #startButton{
- background-color: rgb(245, 0, 0);
- box-shadow: 4px 3px 58px 36px rgba(0,0,0,0.8) inset;
-
+ background-color: rgb(250, 6, 6);
+ box-shadow: 5px 5px 68px 26px rgba(0,0,0,0.9) inset;
  cursor: pointer;
  height: 200px;
  width: 200px;
  border-radius: 100%;
  border: none;
-
  font-size: 19px;
  font-weight: 800;
+ 
 }
 
 #startButton:hover{
-    box-shadow: 4px 3px 58px 36px rgba(0,0,0,1) inset;
+    box-shadow: 4px 3px 58px 1px rgba(0,0,0,0.9) inset;
 
 }
 
 footer{
-    margin-top: 20px;
+    margin-top: 5%;
 }
